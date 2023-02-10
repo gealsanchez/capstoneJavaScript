@@ -4,8 +4,11 @@ const postComment = async (name, comment, idMeal) => {
   const response = await fetch(URL, {
     method: 'POST',
     body: JSON.stringify({
+      // eslint-disable-next-line
       item_id: idMeal,
+      // eslint-disable-next-line
       username: name,
+      // eslint-disable-next-line
       comment: comment,
     }),
     headers: {
