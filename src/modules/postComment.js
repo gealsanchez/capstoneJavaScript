@@ -5,8 +5,8 @@ const postComment = async (name, comment, idMeal) => {
     method: 'POST',
     body: JSON.stringify({
       [item_id]: idMeal,
-      [username]: name,
-      [comment]: comment,
+      username: name,
+      comment: comment,
     }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
