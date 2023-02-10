@@ -1,4 +1,5 @@
 import commentCounter from '../modules/commentCounter.js';
+import mealCounter from '../modules/mealCounter.js';
 
 describe('Test methods', () => {
   test('Counting comments', () => {
@@ -9,7 +10,7 @@ describe('Test methods', () => {
   test('Counting meals', () => {
     document.body.innerHTML = '<div class="mealItem"></div><div class="mealItem"></div><div id="meals-counter"></div>';
 
-    const meals = commentCounter();
+    const meals = mealCounter();
     expect(meals).toBe(2);
   });
 });
