@@ -1,8 +1,7 @@
-import postComment from './postComment';
-import commentary from './commentary';
+import postComment from './postComment.js';
+import commentary from './commentary.js';
 
 const commentsCard = (title, tag, imageThumb, id, area) => {
-
   const commentsBoard = document.querySelector('.comments-board');
 
   const imgThumb = document.createElement('img');
@@ -12,9 +11,9 @@ const commentsCard = (title, tag, imageThumb, id, area) => {
   const form = document.createElement('form');
 
   const divText = document.createElement('div');
-  divText.className='divText';
+  divText.className = 'divText';
   const divCounter = document.createElement('div');
-  divCounter.className='divCounter';
+  divCounter.className = 'divCounter';
   const divTable = document.createElement('div');
   divTable.className = 'divComments';
 

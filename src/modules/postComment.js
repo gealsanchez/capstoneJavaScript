@@ -4,9 +4,12 @@ const postComment = async (name, comment, idMeal) => {
   const response = await fetch(URL, {
     method: 'POST',
     body: JSON.stringify({
-        item_id: idMeal,
-        username: name,
-        comment: comment,
+      // eslint-disable-next-line
+      item_id: idMeal,
+      // eslint-disable-next-line
+      username: name,
+      // eslint-disable-next-line
+      comment: comment,
     }),
     headers: {
       'Content-type': 'application/json; charset=UTF-8',
@@ -14,6 +17,6 @@ const postComment = async (name, comment, idMeal) => {
   });
   const data = await response.json();
   return data;
-}
+};
 
 export default postComment;

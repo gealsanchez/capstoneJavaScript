@@ -1,5 +1,4 @@
-import commentCounter from '../modules/commentCounter';
-import mealCounter from '../modules/mealCounter';
+import commentCounter from '../modules/commentCounter.js';
 
 describe('Test methods', () => {
   test('Counting comments', () => {

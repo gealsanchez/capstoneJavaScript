@@ -1,5 +1,3 @@
-const URL = 'https://us-central1-involvement-api.cloudfunctions.net/capstoneApi/apps/xJ4HvJykr7cdlrGqH18j/likes';
-import getMeals from './getMeals.js';
 import commentsCard from './commentsCard.js';
 
 const commentUI = async (idMeal) => {
