@@ -4,7 +4,7 @@ const postComment = async (name, comment, idMeal) => {
   const response = await fetch(URL, {
     method: 'POST',
     body: JSON.stringify({
-      [item_id]: idMeal,
+      item_id: idMeal,
       username: name,
       comment: comment,
     }),
