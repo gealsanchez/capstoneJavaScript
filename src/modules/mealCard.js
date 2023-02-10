@@ -30,7 +30,7 @@ const mealCard = (title, id, imageId, likeNum) => {
   buttonComment.className = 'button';
 
   div.innerHTML = `<img class='thumb' src='${imageId}'>`;
-  strDiv.innerHTML = `<span>${title}</span>`
+  strDiv.innerHTML = `<span>${title}</span>`;
   likeDiv.innerHTML = `<span class='hide'>${id}</span><img class='imgLike' src='${like}'><div class="stop">${likeNum}</div><p class="stop">Likes</p>`;
   buttonReservation.innerHTML = `<div>Reservations</div><span class='hide'>${id}</span>`;
   buttonComment.innerHTML = `<div>Comments</div><span class='hide'>${id}</span>`;
