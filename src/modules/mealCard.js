@@ -1,7 +1,7 @@
 import like from '../images/heart.svg';
 import postLike from './postLike.js';
 import closeIcon from '../images/x-circle-fill.svg';
-import commentUI from './commentUI.js';
+import commentUI from './modules/commentUI.js';
 
 const myCancel = new Image();
 myCancel.src = closeIcon;
@@ -11,8 +11,7 @@ const myLike = new Image();
 myLike.src = like;
 myLike.classList = 'imgLike';
 
-const mealCard = (title, id, image_id, likeNum, artist_title) => {
-
+const mealCard = (title, id, imageId, likeNum) => {
   const board = document.querySelector('.meals-menu');
 
   const div = document.createElement('div');
@@ -30,11 +29,11 @@ const mealCard = (title, id, image_id, likeNum, artist_title) => {
   const buttonComment = document.createElement('div');
   buttonComment.className = 'button';
 
-  div.innerHTML = `<img class='thumb' src='${image_id}'>`;
+  div.innerHTML = `<img class='thumb' src='${imageId}'>`;
   strDiv.innerHTML = `<span>${title}</span>`
-  likeDiv.innerHTML = `<span class='hide'>${id}</span><img class='imgLike' src='${like}'><div class="stop">${likeNum}</div><p class="stop">Likes</p>`
-  buttonReservation.innerHTML = `<div>Reservations</div><span class='hide'>${id}</span>`
-  buttonComment.innerHTML = `<div>Comments</div><span class='hide'>${id}</span>`
+  likeDiv.innerHTML = `<span class='hide'>${id}</span><img class='imgLike' src='${like}'><div class="stop">${likeNum}</div><p class="stop">Likes</p>`;
+  buttonReservation.innerHTML = `<div>Reservations</div><span class='hide'>${id}</span>`;
+  buttonComment.innerHTML = `<div>Comments</div><span class='hide'>${id}</span>`;
 
   strDiv.appendChild(likeDiv);
   div.appendChild(strDiv);
@@ -49,8 +48,8 @@ const mealCard = (title, id, image_id, likeNum, artist_title) => {
     }
     postLike(e.target.previousElementSibling.textContent);
     const sumlike = e.target.nextElementSibling.textContent;
-    e.target.nextElementSibling.textContent = parseInt(sumlike) + 1;
-  })
+    e.target.nextElementSibling.textContent = parseInt(sumlike,10) + 1;
+  });
 
   const overlay = document.querySelector('.open');
   const cancel = document.querySelector('.close');
@@ -61,7 +60,7 @@ const mealCard = (title, id, image_id, likeNum, artist_title) => {
     commentUI(e.target.nextElementSibling.textContent);
   });
 
-  cancel.addEventListener('click', (e) => {
+  cancel.addEventListener('click', () => {
     overlay.style.display = 'none';
     document.querySelector('.comments-board').innerHTML = '';
   });
