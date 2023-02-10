@@ -1,7 +1,7 @@
 import like from '../images/heart.svg';
 import postLike from './postLike.js';
 import closeIcon from '../images/x-circle-fill.svg';
-import commentUI from './modules/commentUI.js';
+import commentUI from './commentUI.js';
 
 const myCancel = new Image();
 myCancel.src = closeIcon;

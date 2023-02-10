@@ -1,6 +1,6 @@
-import getComments from "./getComments";
-import commentCard from "./commentCard";
-import commentCounter from "./commentCounter";
+import getComments from './getComments.js';
+import commentCard from './commentCard.js';
+import commentCounter from './commentCounter.js';
 
 const commentary = async (idMeal) => {
   const counter = document.querySelector('.divCounter');
