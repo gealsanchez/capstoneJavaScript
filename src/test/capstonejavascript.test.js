@@ -9,7 +9,7 @@ describe('Test methods', () => {
   test('Counting meals', () => {
     document.body.innerHTML = '<div class="mealItem"></div><div class="mealItem"></div><div id="meals-counter"></div>';
 
-    const meals = mealCounter();
+    const meals = commentCounter();
     expect(meals).toBe(2);
   });
 });
