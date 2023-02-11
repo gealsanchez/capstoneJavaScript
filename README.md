@@ -131,7 +131,7 @@ Clone this repository to your desired folder:
 
 ```sh
   cd my-folder
-  git clone [https://github.com/gealsanchez/capstoneJavascript.git]
+  git clone [https://github.com/gealsanchez/capstoneJavaScript.git]
 ```
 
 ### Install
