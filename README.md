@@ -24,7 +24,11 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-  <h3><b>Javascript Capstone Project</b></h3>
+# 📖 [Javascript Capstone Project] <a name="about-project"></a>
+  
+## 🚀 Presentation Video <a name="live-demo"></a>
+
+- [Video link](https://www.loom.com/share/a846c551439d4c9fad2c0d920435923c)
 
 </div>
 
@@ -55,7 +59,6 @@ After you're finished please remove all the comments and instructions!
 <!-- PROJECT DESCRIPTION -->
 
 # 📖 [Javascript Capstone Project] <a name="about-project"></a>
-
 
 **[Javascript Capstone Project]** The JavaScript capstone project is about building a web application based on an external API that provides data about meals. The webapp have 2 interfaces.
 
