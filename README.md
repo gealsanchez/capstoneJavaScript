@@ -102,7 +102,8 @@ After you're finished please remove all the comments and instructions!
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://gealsanchez.github.io/capstoneJavascript/dist/)
+- [Live Demo Link](https://gealsanchez.github.io/capstoneJavaScript/dist)
+                    
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
