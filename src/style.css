@@ -22,8 +22,8 @@ body {
 }
 
 .meals-menu {
-  display: grid;
-  flex-wrap: nowrap;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
   justify-content: center;
 }
