@@ -24,7 +24,7 @@ After you're finished please remove all the comments and instructions!
 
 <div align="center">
 
-# 📖 [Javascript Capstone Project] <a name="about-project"></a>
+# 📖 Javascript Capstone Project <a name="about-project"></a>
   
 ## 🚀 Presentation Video <a name="live-demo"></a>
 
@@ -61,6 +61,10 @@ After you're finished please remove all the comments and instructions!
 # 📖 [Javascript Capstone Project] <a name="about-project"></a>
 
 **[Javascript Capstone Project]** The JavaScript capstone project is about building a web application based on an external API that provides data about meals. The webapp have 2 interfaces.
+
+![meals](https://github.com/gealsanchez/capstoneJavaScript/assets/94255143/743d3ab7-1505-42eb-84c5-92646828fd29)
+
+![mealscomment](https://github.com/gealsanchez/capstoneJavaScript/assets/94255143/c0c386b0-be7b-496a-b084-2b70ca96fc0e)
 
 ## 🛠 Built With <a name="built-with"></a>
 - HTML, CSS & Javascript
